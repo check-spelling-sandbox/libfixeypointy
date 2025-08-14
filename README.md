@@ -15,4 +15,4 @@ The following files are included:
 
 * `decimal.cpp` - The core fixed decimal package supporting decimals with fixed precision(38) and a max scale of 38.
 * `decimal_multiplication_generator.py` - Generates tests for the multiplication operations.
-* `magic_number_generator.py` - To optimize multiplication and division with specific constants we can generate precompiled constats to speed it up.
+* `magic_number_generator.py` - To optimize multiplication and division with specific constants we can generate precompiled constants to speed it up.
