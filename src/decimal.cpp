@@ -294,7 +294,7 @@ void Decimal::DivideByConstant(const int64_t &value) {
 void Decimal::Divide(const Decimal &denominator, const ScaleType &scale) {
   // 1. Multiply the dividend with 10^(denominator scale), with overflow checking.
   // 2. If overflow, divide by the denominator with multi-word 256-bit division.
-  // 3. If no overflow, divide by the denominator with magic numbers if available, otherwise use 128-bit division.
+  // 3. If no overflow, divide by the denominator with magic numbers if available; otherwise, use 128-bit division.
   // Moreover, the result is in the numerator's scale for technical reasons.
   // If the result were to be in the denominator's scale, the first step would need to be multiplication with
   // 10^(2*denominator scale - numerator scale) which requires 256-bit multiply and 512-bit overflow check.
